@@ -1,7 +1,6 @@
 package com.example.toebeanz
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -37,13 +36,13 @@ class Red : AppCompatActivity() {
             val temp = "Color: " + (count + 1)
             title.text = temp
         } else {
-            val temp = "Simon says " + (colors?.get(count) ?: )
+            val temp = "Click " + (colors?.get(count) ?: 0)
             title.text = temp
         }
 
         // Play lost or won the game
         fun gameOver(newTitle: String){
-            colors[count] = newTitle
+            colors?.set(count, newTitle)
             title.text = newTitle
             restart.visibility = View.VISIBLE
             red.text = newTitle
@@ -53,9 +52,9 @@ class Red : AppCompatActivity() {
 
         // Update game based on user's choice
         fun onCorrect(answer: String, classNum: Int){
-            if (colors?.get(count) ?:  == answer){
+            if (colors?.get(count) ?: 0  == answer){
                 val intent = Intent(this@Red, activitiesArray[classNum])
-                if((count+1) == colors.size){
+                if((count+1) == colors?.size){
                     gameOver("YOU WIN!")
                 } else {
                     if (count == score) {

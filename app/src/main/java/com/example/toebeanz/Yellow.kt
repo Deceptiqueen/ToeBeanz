@@ -1,7 +1,6 @@
 package com.example.toebeanz
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -37,7 +36,7 @@ class Yellow : AppCompatActivity() {
             val temp = "Color: " + (count + 1)
             title.text = temp
         } else {
-            val temp = "Simon says " + (colors?.get(count) ?: )
+            val temp = "Click " + (colors?.get(count) ?: 0)
             title.text = temp
         }
 
@@ -53,7 +52,7 @@ class Yellow : AppCompatActivity() {
 
         // Update game based on user's choice
         fun onCorrect(answer: String, classNum: Int){
-            if (colors?.get(count) ?:  == answer){
+            if (colors?.get(count) ?: 0 == answer){
                 val intent = Intent(this@Yellow, activitiesArray[classNum])
                 if (colors != null) {
                     if((count+1) == colors.size){
