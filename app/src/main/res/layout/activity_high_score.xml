@@ -28,39 +28,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.061" />
 
-    <ImageView
-        android:id="@+id/pawImage"
-        android:layout_width="359dp"
-        android:layout_height="287dp"
-        android:layout_below="@id/titleText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-10dp"
-        app:srcCompat="@drawable/paw" />
-
     <Button
         android:id="@+id/startBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
-        android:layout_below="@id/pawImage"
+        android:layout_below="@id/subtitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50sp"
         android:background="#5A5959"
         android:text="START"
         android:textColor="#FFFFFF"
         android:textSize="40dp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/howBtn"
-        android:layout_width="330dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/startBtn"
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:background="#5A5959"
-        android:text="HOW TO PLAY"
-        android:textColor="#FFFFFF"
-        android:textSize="40dp"
+        android:layout_marginTop="10sp"
+        android:fontFamily="casual"
+        android:text="High Scores"
+        android:textColor="#EF1E1E"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

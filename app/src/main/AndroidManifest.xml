@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Red"></activity>
+        <activity android:name=".HowToPlay"></activity>
+        <activity android:name=".HighScore" />
+        <activity android:name=".Red" />
         <activity android:name=".Blue" />
         <activity android:name=".Yellow" />
         <activity android:name=".Green" />

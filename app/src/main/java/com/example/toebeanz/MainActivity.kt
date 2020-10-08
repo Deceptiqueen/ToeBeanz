@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val fourColors = arrayOf("Green", "Yellow", "Blue", "Red")
         val allColors: ArrayList<String> = arrayListOf(fourColors[random])
         val start = findViewById<Button>(R.id.startBtn)
+        val info = findViewById<Button>(R.id.howBtn)
         val activitiesArray = arrayOf(Green::class.java)
 
         // Colours Toe Beanz
@@ -30,6 +31,11 @@ class MainActivity : AppCompatActivity() {
             intent.putStringArrayListExtra("colors", allColors)
             intent.putExtra("count", 0)
             intent.putExtra("score", 0)
+            startActivity(intent)
+        }
+
+        info.setOnClickListener{
+            val intent = Intent(this@MainActivity, HowToPlay::class.java)
             startActivity(intent)
         }
 
