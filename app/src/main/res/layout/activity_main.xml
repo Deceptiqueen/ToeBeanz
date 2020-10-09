@@ -30,15 +30,15 @@
 
     <ImageView
         android:id="@+id/pawImage"
-        android:layout_width="359dp"
-        android:layout_height="287dp"
+        android:layout_width="289dp"
+        android:layout_height="195dp"
         android:layout_below="@id/titleText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-10dp"
         app:srcCompat="@drawable/paw" />
 
     <Button
-        android:id="@+id/homeBtn"
+        android:id="@+id/startBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
         android:layout_below="@id/pawImage"
@@ -54,11 +54,24 @@
         android:id="@+id/howBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
-        android:layout_below="@id/homeBtn"
+        android:layout_below="@id/startBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:background="#5A5959"
         android:text="HOW TO PLAY"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/highScoreBtn"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/howBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#5A5959"
+        android:text="HIGH SCORES"
         android:textColor="#FFFFFF"
         android:textSize="40dp"
         android:textStyle="bold" />

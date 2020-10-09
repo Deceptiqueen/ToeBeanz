@@ -14,7 +14,7 @@ class HowToPlay : AppCompatActivity() {
 
         // Fetch buttons and text areas
         val title = findViewById<TextView>(R.id.titleText)
-        val info = findViewById<Button>(R.id.homeBtn)
+        val info = findViewById<Button>(R.id.startBtn)
 
         info.setOnClickListener {
             val intent = Intent(this@HowToPlay, MainActivity::class.java)
