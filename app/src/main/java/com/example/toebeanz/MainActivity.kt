@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         var random = (0..3).random()
         val fourColors = arrayOf("Green", "Yellow", "Blue", "Red")
         val allColors: ArrayList<String> = arrayListOf(fourColors[random])
-        val start = findViewById<Button>(R.id.startBtn)
+        val start = findViewById<Button>(R.id.homeBtn)
         val info = findViewById<Button>(R.id.howBtn)
         val activitiesArray = arrayOf(Green::class.java)
 
@@ -39,5 +39,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+        //Highscore
+        val intent = Intent(this@MainActivity, HighScore::class.java)
+        intent.putExtra("SCORE", 0)
+        startActivity(intent)
     }
 }

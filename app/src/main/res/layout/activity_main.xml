@@ -38,7 +38,7 @@
         app:srcCompat="@drawable/paw" />
 
     <Button
-        android:id="@+id/startBtn"
+        android:id="@+id/homeBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
         android:layout_below="@id/pawImage"
@@ -54,7 +54,7 @@
         android:id="@+id/howBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
-        android:layout_below="@id/startBtn"
+        android:layout_below="@id/homeBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:background="#5A5959"

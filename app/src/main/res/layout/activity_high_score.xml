@@ -29,29 +29,41 @@
         app:layout_constraintVertical_bias="0.061" />
 
     <Button
-        android:id="@+id/startBtn"
+        android:id="@+id/homeBtn"
         android:layout_width="330dp"
         android:layout_height="80dp"
-        android:layout_below="@id/subtitle"
+        android:layout_below="@id/highScoreLabel"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="80sp"
         android:background="#5A5959"
-        android:text="START"
+        android:text="HOME"
         android:textColor="#FFFFFF"
         android:textSize="40dp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/subtitle"
+        android:id="@+id/highScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:fontFamily="casual"
+        android:text="High Score: 0"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scoreLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10sp"
+        android:layout_marginTop="150dp"
         android:fontFamily="casual"
-        android:text="High Scores"
+        android:text="Score: 0"
         android:textColor="#EF1E1E"
-        android:textSize="35sp"
-        android:textStyle="bold" />
+        android:textSize="45sp" />
 
 </RelativeLayout>

@@ -2,7 +2,6 @@ package com.example.toebeanz
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +14,7 @@ class HowToPlay : AppCompatActivity() {
 
         // Fetch buttons and text areas
         val title = findViewById<TextView>(R.id.titleText)
-        val info = findViewById<Button>(R.id.startBtn)
+        val info = findViewById<Button>(R.id.homeBtn)
 
         info.setOnClickListener {
             val intent = Intent(this@HowToPlay, MainActivity::class.java)
